@@ -2,42 +2,59 @@
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 100;
+  z-index: 9999;
 }
 
 .modal {
-  background-color: #1c1c1c;
-  padding: 2rem;
-  border-radius: 12px;
-  max-width: 600px;
+  background-color: #1e1e28;
+  color: #fff;
   width: 90%;
-  box-shadow: 0 0 15px rgba(0, 112, 243, 0.3);
-  color: white;
+  max-width: 600px;
+  max-height: 80vh;
+  padding: 1.5rem;
+  border-radius: 16px;
   position: relative;
+  overflow-y: auto;
+  box-shadow: 0 0 20px #00000066;
+}
+
+.content {
+  overflow-y: auto;
+  max-height: 60vh;
+}
+
+.aiText {
+  white-space: pre-wrap;
+  margin-top: 0.5rem;
 }
 
 .closeButton {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: none;
+  top: 12px;
+  right: 16px;
+  background: transparent;
   border: none;
   font-size: 1.5rem;
-  color: #999;
+  color: #aaa;
   cursor: pointer;
 }
 
 .badge {
-  display: inline-block;
-  background-color: #ffaa00;
-  color: black;
-  padding: 0.2rem 0.6rem;
-  border-radius: 6px;
+  padding: 2px 8px;
+  border-radius: 8px;
+  background-color: #333;
+  color: #fff;
   font-weight: bold;
+}
+
+.divider {
+  margin: 1rem 0;
+  border: none;
+  border-top: 1px solid #444;
 }
