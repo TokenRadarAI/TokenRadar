@@ -1,0 +1,25 @@
+.container {
+  padding: 1.5rem; /* p-6 */
+  background-color: #18181b; /* bg-zinc-900 (примерно) */
+  min-height: 100vh; /* min-h-screen */
+  color: white; /* text-white */
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 1.875rem; /* text-3xl */
+  margin-bottom: 1.5rem; /* mb-6 */
+  font-weight: 700; /* font-bold */
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem; /* gap-4 */
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+  }
+}
