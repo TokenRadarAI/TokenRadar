@@ -1,0 +1,11 @@
+.page {
+  padding: 2rem;
+  color: #fff;
+  background: linear-gradient(160deg, #0e0e10 0%, #1e1e28 100%);
+  min-height: 100vh;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
