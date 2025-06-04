@@ -10,6 +10,14 @@ TokenRadar is an AI-powered assistant that helps users discover and analyze new 
 -  **Interactive Modal UI**: Displays token information in a scrollable modal window that can be closed by clicking outside.
 - **Modular and Extensible Codebase**: Built with Next.js 15, React Server Components, and CSS Modules.
 
+## Deploy / Live Demo
+
+The live version of the project will be available here:
+
+**[Coming soon – TokenRadar demo link]**
+
+---
+
 ## Tech Stack
 
 - **Framework**: Next.js 15 (App Router)
