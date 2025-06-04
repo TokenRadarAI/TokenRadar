@@ -29,7 +29,7 @@ const messages: (ChatCompletionSystemMessageParam | ChatCompletionUserMessagePar
 const chatCompletion = await openai.chat.completions.create({
   model: "llama3-70b-8192",
   messages,
-});
+} as {model: string, messages: (ChatCompletionSystemMessageParam | ChatCompletionUserMessageParam)[]});
 
     return NextResponse.json({ result: chatCompletion.choices[0].message.content });
   } catch (error) {
