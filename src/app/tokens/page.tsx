@@ -12,10 +12,20 @@ export default function TokensPage() {
 
   const [maxPrice, setMaxPrice] = useState<number>(1);
   const [minVolume, setMinVolume] = useState<number>(0);
+  //  const [watchlist, setWatchlist] = useState<TokenData[]>([]);
 
   const filteredTokens = tokens.filter(
     (token) => token.price <= maxPrice && token.volume >= minVolume
   );
+
+  // const handleAddToWatchlist = (token: TokenData) => {
+  //   const already = watchlist.find((t) => t.symbol === token.symbol);
+  //   if (!already) {
+  //     const updated = [...watchlist, token];
+  //     setWatchlist(updated);
+  //     localStorage.setItem("watchlist", JSON.stringify(updated));
+  //   }
+  // };
 
   return (
     <div className={styles.page}>
